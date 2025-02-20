@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: orange;
+        }
+        .calculator{
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 50px black;
+            width: 450px;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+            margin: 10px;
+        }
+
+        input{
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        input:hover{
+            border-color: green;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: lightgreen;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(42, 179, 42);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Interest calculator</h1>
+
+        <form id="interestForm">
+            <label for="principal">Principal Amount</label>
+            <input type="number" id="principal" name="principal" required> 
+            <label for="rate">Rate of Interest (% per year)</label>
+            <input type="number" id="rate" name="rate" required>
+            <label for="time">Time (years)</label>
+            <input type="number" id="time" name="time" required>
+
+            <button>Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
