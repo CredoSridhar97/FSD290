@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <title>DOM Day 1 Session</title>
+
+    <style>
+        #section{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- getElementById() -->
+    <!-- <h1 id="message">Welcome to Credo Systemz</h1>
+        <script>
+            const answer=document.getElementById("message")
+            answer.style.color="orange"
+            answer.style.backgroundColor="black"
+            answer.style.textAlign="center"
+            answer.style.margin="20px"
+            answer.style.padding="20px"
+            document.write(answer)
+            console.log(answer)
+        </script> -->
+
+    <!-- <h1 id="datetime"></h1>
+
+
+        <button type="button" 
+        onclick="document.getElementById('datetime').innerHTML=Date()"
+        >Display Date and Time</button> -->
+
+    <!-- <h2 id="vote">Credo Systemz</h2>
+
+        <button
+        type="button"
+        onclick="document.getElementById('vote').innerHTML='My Vote Credo Systemz'">Vote - Credo Systemz</button> -->
+
+
+    <!-- <button onclick="myfunction()">Delete Content</button>
+
+        <h1 id="process"></h1>
+
+        <script>
+            function myfunction()
+            {
+                let answer
+                if(confirm("Are you sure delete the files?????")){
+                    answer="Process - Done"
+                }
+                else{
+                    answer="Process - Not Done"
+                }
+                document.getElementById("process").innerHTML=answer
+            }
+        </script> -->
+
+
+    <!-- <button onclick="document.getElementById('light').src='./pic_bulbon.gif'">Turn on the Light</button>
+        <img id="light" src="./pic_bulboff.gif" style="width: 100px;">
+        <button onclick="document.getElementById('light').src='./pic_bulboff.gif'">Turn Off the Light</button> -->
+
+
+    <!-- getElementByName() -->
+
+    <!-- HTML<input name="skills" type="checkbox" value="HTML">
+        CSS<input name="skills" type="checkbox" value="CSS">
+        JavaScript<input name="skills" type="checkbox" value="JavaScript">
+        BS / Bulma<input name="skills" type="checkbox" value="BS / Bulma">
+        React JS<input name="skills" type="checkbox" value="React JS ">
+    
+
+        <h1>Number of elements with name="skills" is : </h1>
+        <h1 id="demo"></h1>
+
+        <script>
+            let answer=document.getElementsByName("skills").length
+            console.log(answer)
+            document.getElementById("demo").innerHTML=answer
+        </script> -->
+
+    <!-- getElementByTagName() -->
+
+    <!-- <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BS</li>
+            <li>JS</li>
+            <li>React</li>
+            <li>Redux</li>
+        </ol>
+
+        <h1 id="demo"></h1>
+
+        <script>
+            collection=document.getElementsByTagName("li")
+            console.log(collection)
+
+            document.getElementById("demo").innerHTML=collection[2].innerHTML
+        </script> -->
+
+
+    <!-- getElementByClassName() -->
+
+    <!-- <h1 class="demo"></h1>
+    <h2 class="demo"></h2>
+    <h3 class="demo"></h3>
+    <h4 class="demo"></h4>
+    <h5 class="demo"></h5>
+    <h6 class="demo"></h6>
+
+    <script>
+        collection = document.getElementsByClassName("demo")
+        console.log(collection)
+        collection[0].innerHTML = "React & Redux "
+        collection[1].innerHTML = "JavaScript"
+        collection[2].innerHTML = "Bulma / TCSS / BS"
+        collection[3].innerHTML = "CSS"
+        collection[4].innerHTML = "HTML"
+        collection[5].innerHTML = "Basic of Web"
+    </script> -->
+
+
+    <h1>Welcome to Credo Systemz</h1>
+
+    <h1>Front End Web Development</h1>
+
+    <div id="section">
+        <p>I am Sridhar Raj P</p>
+    </div>
+
+
+    <br><br>
+
+    <button type="button" onclick="myfunction()">Set Overall Web Page Background Color</button>
+
+    <button type="button" onclick="myfunction1()">Div Tag Set the Background Color</button>
+
+    <script>
+
+        function myfunction()
+        {
+            document.body.style.backgroundImage="url('1.gif')"
+            document.body.style.backgroundRepeat="no-repeat"
+            document.body.style.backgroundSize="cover"
+        }
+
+        function myfunction1(){
+            document.getElementById("section").style.backgroundColor="lightblue"
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

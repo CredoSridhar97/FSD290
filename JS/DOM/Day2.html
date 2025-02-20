@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Day 2 DOM Session</title>
+
+        <style>
+            .democlass{
+                padding: 20px;
+                background-color: orange;
+                color: black;
+                font-family: cursive;
+                font-size: xx-large;
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- <button onclick="myfunction()">Remove</button>
+        <ul id="myList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BS</li>
+            <li>JS</li>
+            <li>React & Redux</li>
+        </ul> -->
+
+
+        <!-- <p class="style">Welcome to Credo Systemz</p>
+        <p>Full Stack Web Development</p>
+        <p class="style">Front End Web Development - React JS</p> -->
+
+
+        <p id="parea">Welcome to Credo Systemz</p>
+
+        <button onclick="myfunction()">Add Class</button>
+
+
+        <script>
+            // createElement() , appendChild()
+
+            // let answer=document.createElement("h1")
+            // answer.innerText="Welcome to Credo Systemz"
+            // document.body.appendChild(answer)
+
+            // removeChild()
+
+            // function myfunction(){
+            //     list=document.getElementById("myList")
+            //     console.log(list)
+            //     // list.removeChild(list.firstElementChild)
+            //     list.removeChild(list.lastElementChild)
+            // }
+
+            // querySelector()
+
+            // document.querySelector("p").style.backgroundColor="orange"
+
+            // querySelectorAll()
+
+            // list=document.querySelectorAll(".style")
+
+            // for(i=0;i<list.length;i++){
+            //     list[i].style.backgroundColor="orange"
+            // }
+
+            // setAttribute()
+
+            function myfunction()
+            {
+                document.getElementById("parea").setAttribute("class","democlass")
+            }
+
+
+
+
+
+          
+        </script>
+         
+    </body>
+</html>
